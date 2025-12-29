@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Pregnancy Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>My Pregnancy Guide</h1>
+  <p>A simple guide for expecting mothers</p>
+</header>
+
+<nav>
+  <button onclick="showSection('home')">Home</button>
+  <button onclick="showSection('trimesters')">Trimesters</button>
+  <button onclick="showSection('calculator')">Due Date Calculator</button>
+  <button onclick="showSection('contact')">Contact</button>
+</nav>
+
+<section id="home" class="active">
+  <h2>Welcome 🤍</h2>
+  <p>
+    My Pregnancy Guide is a simple and informative website created to support
+    expecting mothers during pregnancy with useful information and tools.
+  </p>
+</section>
+
+<section id="trimesters">
+  <h2>Pregnancy Trimesters</h2>
+  <ul>
+    <li><strong>First Trimester:</strong> Weeks 1 – 12</li>
+    <li><strong>Second Trimester:</strong> Weeks 13 – 26</li>
+    <li><strong>Third Trimester:</strong> Weeks 27 – 40</li>
+  </ul>
+</section>
+
+<section id="calculator">
+  <h2>Due Date Calculator</h2>
+  <label for="lastPeriod">First day of your last menstrual period:</label><br><br>
+  <input type="date" id="lastPeriod"><br><br>
+  <button onclick="calculateDueDate()">Calculate</button>
+  <p id="result"></p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <input type="text" id="name" placeholder="Your Name"><br>
+  <input type="email" id="email" placeholder="Your Email"><br>
+  <textarea id="message" placeholder="Your Message"></textarea><br>
+  <button onclick="sendMessage()">Send Message</button>
+  <p id="formMsg"></p>
+</section>
+
+<footer>
+  <p>© 2025 | Developed by Vildane Rustemi</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
